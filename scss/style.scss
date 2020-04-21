@@ -115,12 +115,12 @@ $radius: 10px;
             text-align: center;
             color: #fff;
             background-color: $br-yellow;
-            border-radius: 5px;
+            border-radius: 7px;
             padding: 14px;
             box-sizing: border-box;
 
             &:hover {
-                background-color: lighten($br-yellow, 10%);
+                background-color: darken($br-yellow, 8%);
             }
         }
 
@@ -164,7 +164,7 @@ $radius: 10px;
         align-items: center;
         -webkit-box-pack: center;
         justify-content: center;
-        /* height: 100vh; */
+        height: 100vh;
     }
 
     .block {
@@ -253,12 +253,12 @@ $radius: 10px;
             text-align: center;
             color: #fff;
             background-color: $br-yellow;
-            border-radius: 5px;
+            border-radius: 7px;
             padding: 14px;
             box-sizing: border-box;
 
             &:hover {
-                background-color: lighten($br-yellow, 10%);
+                background-color: darken($br-yellow, 8%);
             }
         }
 
