@@ -1,0 +1,295 @@
+/* *Colors */
+$cyan: hsl(179, 62%, 43%);
+$br-yellow: hsl(71, 73%, 54%);
+$lt-gray: hsl(204, 43%, 93%);
+$gr-blue: hsl(218, 22%, 67%);
+
+/* border - radius */
+$radius: 10px;
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@media (min-width: 320px) {
+
+    body {
+        font-family: 'Karla', sans-serif;
+        font-size: 16px;
+        background-color: $lt-gray;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+
+    .block {
+
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+
+        -webkit-box-pack: center;
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        width: 335px;
+        margin: 20px 0 20px 0;
+
+    }
+
+    .join {
+        width: 100%;
+        padding: 42px 42px 0;
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: $radius $radius 0 0;
+
+    }
+
+    .join__h1 {
+        font-size: 24px;
+        color: $cyan;
+        padding-bottom: 22px;
+    }
+
+    .join__h2 {
+        font-size: 18px;
+        color: $br-yellow;
+        padding-bottom: 13px;
+    }
+
+    .join__text {
+        color: $gr-blue;
+        line-height: 1.6;
+        font-size: 15.5px;
+        padding-bottom: 42px;
+    }
+
+    .month {
+        width: 100%;
+        background-color: $cyan;
+        padding: 40px;
+        box-sizing: border-box;
+
+        &__h2 {
+            color: #fff;
+            font-size: 17px;
+            font-weight: 400;
+            padding-bottom: 15px;
+        }
+
+        &__price {
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            font-size: 15px;
+            color: #ffffffa9;
+            margin-bottom: 9px;
+        }
+
+        &__span {
+            font-size: 32px;
+            color: #fff;
+            margin-right: 15px;
+        }
+
+        &__txt {
+            color: #fff;
+            font-size: 15.5px;
+            margin-bottom: 32px;
+        }
+
+        &__btn {
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            background-color: $br-yellow;
+            border-radius: 5px;
+            padding: 14px;
+            box-sizing: border-box;
+
+            &:hover {
+                background-color: lighten($br-yellow, 10%);
+            }
+        }
+
+    }
+
+    .why {
+        width: 100%;
+        background-color: #4abebd;
+        padding: 40px;
+        box-sizing: border-box;
+        border-radius: 0 0 $radius $radius;
+
+        &__h2 {
+            color: #fff;
+            font-size: 17px;
+            font-weight: 400;
+            margin-bottom: 18px;
+        }
+
+        &__txt {
+            font-size: 13px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.603);
+        }
+    }
+
+    .shadow {
+        box-shadow: 0 10px 10px 3px rgba(100, 100, 100, .3);
+    }
+
+} 
+
+@media (min-width: 480px) {
+    body {
+        font-family: 'Karla', sans-serif;
+        font-size: 16px;
+        background-color: $lt-gray;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        /* height: 100vh; */
+    }
+
+    .block {
+
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+
+        -webkit-box-pack: center;
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        width: 636px;
+
+    }
+
+    .join {
+        width: 100%;
+        padding: 42px 42px 0;
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: $radius $radius 0 0;
+
+    }
+
+    .join__h1 {
+        font-size: 24px;
+        color: $cyan;/* 
+        padding-bottom: 22px; */
+    }
+
+    .join__h2 {
+        font-size: 18px;
+        color: $br-yellow;
+        padding-bottom: 13px;
+    }
+
+    .join__text {
+        color: $gr-blue;
+        line-height: 1.6;
+        font-size: 15.5px;
+        padding-bottom: 42px;
+    }
+
+    .month {
+        width: 50%;
+        background-color: $cyan;
+        padding: 40px;
+        box-sizing: border-box;
+        border-radius: 0 0 0 $radius;
+
+        &__h2 {
+            color: #fff;
+            font-size: 17px;
+            font-weight: 400;
+            padding-bottom: 15px;
+        }
+
+        &__price {
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            font-size: 15px;
+            color: #ffffffa9;
+            margin-bottom: 9px;
+        }
+
+        &__span {
+            font-size: 32px;
+            color: #fff;
+            margin-right: 15px;
+        }
+
+        &__txt {
+            color: #fff;
+            font-size: 15.5px;
+            margin-bottom: 32px;
+        }
+
+        &__btn {
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            background-color: $br-yellow;
+            border-radius: 5px;
+            padding: 14px;
+            box-sizing: border-box;
+
+            &:hover {
+                background-color: lighten($br-yellow, 10%);
+            }
+        }
+
+    }
+
+    .why {
+        width: 50%;
+        background-color: #4abebd;
+        padding: 40px;
+        box-sizing: border-box;
+        border-radius: 0 0 $radius 0;
+
+        &__h2 {
+            color: #fff;
+            font-size: 17px;
+            font-weight: 400;
+            margin-bottom: 18px;
+        }
+
+        &__txt {
+            font-size: 13px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.603);
+        }
+    }
+
+    .shadow {
+        box-shadow: 0 10px 15px 5px rgba(100, 100, 100, .05);
+    }
+
+}
+
+// media
+
